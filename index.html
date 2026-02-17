@@ -5,40 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="./output.css" rel="stylesheet">
+    <link href="./dist/output.css" rel="stylesheet">
 </head>
 
-<body>
+ 
 
-    <h2>Iniciar Sesión</h2>
+     <body class="bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 min-h-screen flex items-center justify-center">
 
-    <form action="#" method="post">
+  <div class="bg-white shadow-2xl rounded-3xl flex w-full max-w-3xl overflow-hidden flex justify-center ">
 
-        <p>
-            <label for="email">Correo electrónico:</label><br>
-            <input type="email" id="email" name="email" required>
-        </p>
+    <!-- Lado izquierdo (Imagen / Branding) -->
+    
+    <!-- Lado derecho (Formulario) -->
+    <div class="w-full md:w-1/2 p-8 md:p-12">
+      <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Iniciar Sesión</h2>
 
-        <p>
-            <label for="password">Contraseña:</label><br>
-            <input type="password" id="password" name="password" required>
-        </p>
+      <form class="space-y-5">
+        
+        <!-- Email -->
+        <div>
+          <label class="block text-sm font-medium text-gray-600 mb-1">Correo electrónico</label>
+          <input type="email" placeholder="ejemplo@email.com"
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition">
+        </div>
 
-        <p>
-            <input type="checkbox" id="remember" name="remember">
-            <label for="remember">Recordarme</label>
-        </p>
+        <!-- Password -->
+        <div>
+          <label class="block text-sm font-medium text-gray-600 mb-1">Contraseña</label>
+          <input type="password" placeholder="********"
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition">
+        </div>
 
-        <p>
-            <button type="submit">Ingresar</button>
-        </p>
+        <!-- Recordarme -->
+        <div class="flex items-center justify-between text-sm">
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" class="rounded text-indigo-600 focus:ring-indigo-500">
+            <span class="text-gray-600">Recordarme</span>
+          </label>
+          <a href="#" class="text-indigo-600 hover:underline">¿Olvidaste tu contraseña?</a>
+        </div>
 
-        <p>
-            <a href="#">¿Olvidaste tu contraseña?</a>
-        </p>
+        <!-- Botón -->
+        <button type="submit"
+          class="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition duration-300 font-semibold">
+          Ingresar
+        </button>
 
-    </form>
+      </form>
+
+      <!-- Registro -->
+      <p class="text-sm text-gray-600 mt-6 text-center">
+        ¿No tienes cuenta?
+        <a href="#" class="text-indigo-600 font-medium hover:underline">Regístrate</a>
+      </p>
+    </div>
+
+  </div>
 
 </body>
+
+ 
 
 </html>
