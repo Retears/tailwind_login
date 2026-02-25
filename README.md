@@ -9,7 +9,7 @@ Descripción breve del proyecto.
 
 ## 📸 Capturas
 
-![login](captur.png)
+![login](Captur.png)
 
 ## 📦 Instalación
 1. Clona el repositorio
