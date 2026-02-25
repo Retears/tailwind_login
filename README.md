@@ -13,7 +13,11 @@ Descripción breve del proyecto.
 
 ## 📦 Instalación
 1. Clona el repositorio
-2. Abre index.html
+2. Abre GIT
+3. Escribe el comando npm install (npm i) para instalar las depencias
+4. Luego, el comando: npm run dev
+5. Abre index.html
+6. y ¡listo!
 
 
 
